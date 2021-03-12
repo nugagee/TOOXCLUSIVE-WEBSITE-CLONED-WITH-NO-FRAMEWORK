@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Lobster&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  font-family: "Heebo", sans-serif;
+  list-style: none;
+}
+body {
+  background: rgb(89, 87, 87);
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  width: 95%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* =====================BET AD SECTION============================================*/
+.container .bet-ad {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.bet-ad img {
+  width: 100%;
+  height: 100%;
+}
+/* =====================MENU SECTION============================================*/
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+}
+.menu nav ul {
+  display: flex;
+}
+.menu nav ul li {
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu nav ul li:hover {
+  border-bottom: 1px solid red;
+}
+.menu nav .active {
+  border-bottom: 1px solid red;
+}
+.menu .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  height: 20px;
+  width: 20px;
+  background: black;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 2px white;
+  cursor: pointer;
+}
+.menu .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a i {
+  color: white;
+  font-size: 0.5rem;
+}
+/* =====================LOGO SECTION============================================*/
+.logo-sec {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-sec .logo {
+  width: 20%;
+  height: 90%;
+  padding: 5px;
+  object-fit: cover;
+}
+.logo-sec .logo img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.video-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.video-sec .video {
+  width: 70%;
+}
+.video video {
+  width: 100%;
+}
+.malt-ad {
+  margin-left: 10px;
+  align-self: flex-start;
+}
+/* =====================MAIN CONTENT SECTION============================================*/
+section {
+  width: 100%;
+  height: auto;
+  min-height: 1000px;
+  background: rgb(245, 239, 239);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+section .posts {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+/* =====================FIXED ARROW & LINE SECTION============================================*/
+section .fixed {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 66%;
+  padding-left: 5px;
+  height: 50px;
+}
+.fixed .line {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.311);
+}
+.fixed .navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.fixed .navi p {
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.fixed i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  color: rgba(81, 78, 78, 0.612);
+}
+.fixed p:hover {
+  color: blueviolet;
+}
+/* =====================MUSIC POST SECTION============================================*/
+.post {
+  position: relative;
+  width: 49%;
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.605);
+  overflow: hidden;
+}
+.post:hover img {
+  transform: scale(1.2);
+}
+.post .post-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.post .post-title {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: auto;
+  min-height: 20%;
+  background: rgba(0, 0, 0, 0.646);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.66);
+}
+.post-title h2 {
+  color: white;
+  font-size: 0.6rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1rem;
+  transition: all 0.3s ease;
+}
+.post-title h2:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/* =====================SIDEBAR SECTION============================================*/
+section .sidebar {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sidebar .search-bar {
+  width: 100%;
+}
+.sidebar .search-bar span {
+  font-size: 0.6rem;
+  font-weight: 500;
+  display: block;
+}
+.sidebar .search-bar input {
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.461);
+  padding: 3px 5px;
+  font-size: 0.7rem;
+  width: 70%;
+}
+.search-bar button {
+  outline: none;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.search-bar button:hover {
+  transform: scale(1.1);
+}
+/* =====================SIDEBAR AD SECTION============================================*/
+.sidebar .side-ad {
+  width: 100%;
+  margin-top: 20px;
+}
+.sidebar .side-ad img {
+  width: 100%;
+}
+/* ====================POPULAR POST SECTION============================================*/
+.sidebar .popular-post {
+  width: 100%;
+  margin-top: 20px;
+}
+.sidebar .popular-post h3 {
+  display: block;
+  width: 100%;
+  background: rgb(242, 36, 36);
+  text-align: center;
+  color: white;
+}
+.popular-post .p-posts {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.popular-post .p-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+}
+.p-post .p-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.p-post .p-img img {
+  width: 100%;
+  height: 100%;
+}
+.p-post .p-det {
+  width: 80%;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.8rem;
+}
+.p-post .p-det span {
+  font-size: 0.5rem;
+}
+.p-post .p-det p {
+  font-size: 0.6rem;
+}
+.p-post .p-det a {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: rgb(80, 80, 245);
+}
+/* =====================FOOTER SECTION============================================*/
+footer {
+  height: 60px;
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+/* =====================MEDIA QUERY-370PX SECTION============================================*/
+@media (max-width: 370px) {
+  .menu ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .menu nav ul {
+    width: 100vw;
+    flex-wrap: wrap;
+    font-size: 0.4rem;
+  }
+
+  .menu .social {
+    display: none;
+  }
+  .logo-sec .logo {
+    width: 60%;
+  }
+  .video-sec .video {
+    width: 100%;
+  }
+  .bet-ad,
+  .name-ad,
+  .malt-ad {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+  }
+  section .posts,
+  .post {
+    width: 100%;
+  }
+  section .sidebar,
+  .sidebar .search-bar {
+    width: 100%;
+  }
+  .side-ad {
+    display: none;
+  }
+}
+/* =====================MEDIA QUERY-570PX SECTION============================================*/
+@media (max-width: 570px) {
+  .menu ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .menu nav ul {
+    width: 100vw;
+    flex-wrap: wrap;
+    font-size: 0.4rem;
+  }
+  .menu .social {
+    display: none;
+  }
+  .logo-sec .logo {
+    width: 40%;
+  }
+  .bet-ad,
+  .name-ad,
+  .malt-ad {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .posts {
+    width: 100%;
+  }
+  section .sidebar {
+    justify-content: center;
+    width: 90%;
+  }
+}
